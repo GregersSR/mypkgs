@@ -11,6 +11,6 @@
       pkgs = nixpkgs.legacyPackages.${system};
       packages = import ./default.nix { inherit pkgs;};
     in {
-      packages.x86_64-linux = packages // { default = packages.pythonPackages.dtuimldmtools; };
+      packages.x86_64-linux = packages;
     };
 }
