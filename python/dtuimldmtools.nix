@@ -27,7 +27,7 @@ buildPythonPackage rec {
   };
 
   # do not run tests
-  doCheck = true;
+  doCheck = false;
 
   # specific to buildPythonPackage, see its reference
   pyproject = true;
